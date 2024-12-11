@@ -1,0 +1,71 @@
+h2 {
+  margin-bottom: 1em;
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+}
+
+.thank-you-message {
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  padding: 1em;
+  margin-bottom: 1em;
+  color: #155724;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  font-family: Arial, sans-serif;
+}
+
+div {
+  margin-bottom: 1em;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5em;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #66afe9;
+}
+
+button {
+  padding: 0.5em 1em;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+button[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+div > div {
+  color: #d9534f;
+  font-size: 0.9rem;
+  margin-top: 0.5em;
+}

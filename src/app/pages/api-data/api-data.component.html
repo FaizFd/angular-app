@@ -1,0 +1,7 @@
+<div class="api-data-container">
+    <div *ngFor="let user of users; trackBy: trackById" class="user-item">
+        <h3>{{ user.first_name }} {{ user.last_name }}</h3>
+        <p>{{ user.email }}</p>
+        <img [src]="user.avatar" alt="{{ user.first_name }} {{ user.last_name }}" class="user-avatar" />
+    </div>
+</div>

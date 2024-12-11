@@ -1,0 +1,25 @@
+<h2>Create User</h2>
+
+<div *ngIf="showThankYouMessage" class="thank-you-message">
+    <p>User created successfully!</p>
+</div>
+
+<form [formGroup]="feedbackForm" (ngSubmit)="onSubmit()">
+    <div>
+        <label for="name">Name</label>
+        <input id="name" formControlName="name" />
+        <div *ngIf="feedbackForm.get('name')?.invalid && feedbackForm.get('name')?.touched">
+            Name is required and must be at least 3 characters.
+        </div>
+    </div>
+
+    <div>
+        <label for="job">Job</label>
+        <input id="job" formControlName="job" />
+        <div *ngIf="feedbackForm.get('job')?.invalid && feedbackForm.get('job')?.touched">
+            Job is required.
+        </div>
+    </div>
+
+    <button type="submit" [disabled]="feedbackForm.invalid">Submit</button>
+</form>
